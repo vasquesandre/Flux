@@ -12,10 +12,6 @@ This app is part of my learning journey through the [iOS & Swift - The Complete 
 ![UIKit](https://img.shields.io/badge/UIKit-000000?logo=apple&logoColor=white&style=for-the-badge)
 ![CoreData](https://img.shields.io/badge/CoreData-333333?style=for-the-badge&logo=apple)
 
-- **Swift** – the programming language used
-- **UIKit** – for building the user interface
-- **Core Data** – for local data persistence
-
 ---
 
 ## Features
