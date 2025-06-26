@@ -15,7 +15,7 @@ class TodoListController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //loadItems()
+        loadItems()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
