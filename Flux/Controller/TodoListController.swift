@@ -70,7 +70,7 @@ class TodoListController: UITableViewController {
         do {
             try context.save()
         } catch {
-            print("Error saving context, \(error)")
+            print("Error saving item, \(error)")
         }
         
         self.tableView.reloadData()
@@ -80,7 +80,7 @@ class TodoListController: UITableViewController {
         do {
             itemArray = try context.fetch(request)
         } catch {
-            print("Error fetching dara from context, \(error)")
+            print("Error fetching item data from context, \(error)")
         }
         tableView.reloadData()
     }

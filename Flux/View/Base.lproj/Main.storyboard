@@ -8,6 +8,45 @@
     </dependencies>
     <scenes>
         <!--Flux-->
+        <scene sceneID="IDn-YR-K9G">
+            <objects>
+                <tableViewController id="Pys-Gc-dcm" customClass="CategoryViewController" customModule="Flux" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="lkq-qQ-BvR">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" id="ceH-EB-T5q">
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ceH-EB-T5q" id="nw2-hO-SrC">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Pys-Gc-dcm" id="aYQ-4A-q6C"/>
+                            <outlet property="delegate" destination="Pys-Gc-dcm" id="DRa-aw-ml5"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Flux" id="lOX-wt-KHF">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="b4Z-Ds-ILi">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addButtonPressed:" destination="Pys-Gc-dcm" id="f1X-Bb-wlD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="6V4-lR-9C7" kind="show" identifier="goToItems" id="AX9-XF-Gb6"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OxK-ZL-DWf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1515" y="6"/>
+        </scene>
+        <!--Items-->
         <scene sceneID="ffU-vz-xN5">
             <objects>
                 <tableViewController id="6V4-lR-9C7" customClass="TodoListController" customModule="Flux" sceneMemberID="viewController">
@@ -38,7 +77,7 @@
                             <outlet property="delegate" destination="6V4-lR-9C7" id="zA6-gs-DdW"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Flux" id="TWK-LY-Ksr">
+                    <navigationItem key="navigationItem" title="Items" id="TWK-LY-Ksr">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="cYk-Sl-Tls">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -49,7 +88,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ltc-Qn-TBg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1609.9236641221373" y="6.3380281690140849"/>
+            <point key="canvasLocation" x="2396" y="6"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="x9C-Fb-Ru7">
@@ -67,7 +106,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="6V4-lR-9C7" kind="relationship" relationship="rootViewController" id="FaI-nb-yuU"/>
+                        <segue destination="Pys-Gc-dcm" kind="relationship" relationship="rootViewController" id="qUQ-KD-3Pl"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HHg-Ty-TAt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
