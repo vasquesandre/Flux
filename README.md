@@ -20,6 +20,7 @@ This app is part of my learning journey through the [iOS & Swift - The Complete 
 
 - Create and manage multiple **categories**
 - Add, check off, and delete **to-do items**
+- Search bar to filter items
 - Save all data locally using **Realm**
 
 ---
@@ -27,7 +28,6 @@ This app is part of my learning journey through the [iOS & Swift - The Complete 
 ## Work in Progress
 
 - Add swipe-to-delete functionality
-- Search bar to filter items
 - iCloud sync (future)
 
 ---
